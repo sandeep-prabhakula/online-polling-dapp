@@ -99,7 +99,7 @@ function App() {
     getCurrentWalletConnected()
     addWalletListener()
     getAllCandidates()
-  }, [walletAddress])
+  }, [])
 
   const connectWallet = async () => {
     if (typeof window != "undefined" && typeof window.ethereum != "undefined") {
@@ -173,7 +173,7 @@ function App() {
         ) : "Connect wallet"}</button>
       </div>}
 
-      
+
       <p className='m-2 display-6'>Your wallet address :
         <br />
         <strong>
