@@ -99,7 +99,7 @@ function App() {
     getCurrentWalletConnected()
     addWalletListener()
     getAllCandidates()
-  }, [])
+  }, [walletAddress])
 
   const connectWallet = async () => {
     if (typeof window != "undefined" && typeof window.ethereum != "undefined") {
